@@ -1,20 +1,39 @@
+ <meta charset="utf-8">
+
+
 <link href="jquery-ui.css" rel="stylesheet">
 <script src="external/jquery/jquery.js"></script>
 <script src="jquery-ui.js"></script>
 
 <div id="tabs">
 	<ul>
-		<li><a href="#tabs-1">¬G¨Æ¤¶²Ğ</a></li>
-		<li><a href="#tabs-2">¨¤¦â¤¶²Ğ</a></li>
-		<li><a href="#tabs-3">°Ó«~¤¶²Ğ</a></li>
-		<li><a href="#tabs-3">¹Î¶¤¤¶²Ğ</a></li>
-		<li><a href="https://www.facebook.com/Dream-Journey-%E5%A4%A2%E4%B9%8B%E6%97%85-1809630212629096/?fref=ts">Áy®Ñ±M·~</a></li>
+		<li><a href="#tabs-1">æ•…äº‹ä»‹ç´¹</a></li>
+		<li><a href="#tabs-2">è§’è‰²ä»‹ç´¹</a></li>
+		<li><a href="#tabs-3">å•†å“ä»‹ç´¹</a></li>
+		<li><a href="#tabs-4">åœ˜éšŠä»‹ç´¹</a></li>
+		<li><a href="#tabs-5">è‡‰æ›¸å°ˆæ¥­</a></li>
 	</ul>
-	<div id="tabs-1">¬G¨Æ¤º®e</div>
-	<div id="tabs-2">div2</div>
-	<div id="tabs-3">div3</div>
+	<div id="tabs-1">æ•…äº‹å…§å®¹</div>
+    <div id="tabs-2">
+	<span id='norey' title='123456'>è«¾äº</span>
+	é›·ç†Š
+	ç«è±¹
+	æ°´é¯Š
+	é¢¨é³¥
+	æœ¨çŒ©
+	é­”ç‹</div>
+	<div id="tabs-3"><p>Enter Date: <input type = "text" id = "datepicker-12"></p>
+</div>
+	<div id="tabs-4">div4</div>
+	<div id="tabs-5"><a href="https://www.facebook.com/Dream-Journey-%E5%A4%A2%E4%B9%8B%E6%97%85-1809630212629096/?fref=ts">è‡‰æ›¸å°ˆæ¥­</a></div>
 </div>
 
-<script>
+<script>$(function() {
+            $("#datepicker-12").tooltip();
+            $("#norey").tooltip();
+			            $( "#datepicker-12" ).datepicker();
+
+         });
+
 $( "#tabs" ).tabs();
 </script>
